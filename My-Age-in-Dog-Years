@@ -1,0 +1,20 @@
+//this is my current age
+let myAge = 29;
+//these are the first two years of dog's life
+let earlyYears = 2;
+//The first two years of a dog’s life count as 10.5 dog years each.
+earlyYears *=10.5;
+//we already counted the first 2 years, so we substract them
+let laterYears = myAge -2;
+//each consequent dog year will be counted as 4 years
+laterYears *=4
+console.log(earlyYears);
+console.log(laterYears);
+//the sum of all dog years 
+let myAgeInDogYears = earlyYears + laterYears;
+//we are writing my name with all lowercase letters
+let myName = 'Anna'.toLowerCase();
+//a statement describing how old I would be if I was a dog
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
+
+
