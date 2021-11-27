@@ -1,0 +1,21 @@
+let happy
+
+let beHappy1 = () =>{
+    if (happy){
+      console.log('clap your hands')
+    }
+    else {
+      console.log('cheer up!')
+    }
+}
+
+
+let beHappy2 = () => {
+ //happy = true //rewrote truthiness of let happy in line 1
+ let happy = true
+  console.log(happy)
+}
+
+beHappy2()
+console.log(happy) //falsy (undefined), therefore the 'cheer up'
+beHappy1()
