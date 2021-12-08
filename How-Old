@@ -1,0 +1,21 @@
+const currentYear = 2021
+
+function howOld(age, year){
+const yearBorn = currentYear - age;
+const calculatedAge = year-currentYear+age
+  if (year > currentYear) {
+    return (`You will be ${calculatedAge} in the year ${year}`)
+  }
+  else if (year < yearBorn){
+      return (`The year ${year} was ${-(year - yearBorn)} years before you were born`)
+  }
+  else if (year < currentYear && year > yearBorn)
+    return (`You were ${calculatedAge} in the year ${year}`)
+//return calculatedAge
+}
+
+console.log(howOld(34, 1988))
+console.log(howOld(34, 2087))
+console.log(howOld(34, 1887))
+//console.log(2087-2021+34) //my way to find the solution
+
